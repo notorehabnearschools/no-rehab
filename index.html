@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <title>San Marcos Community Concerns</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -12,17 +13,24 @@
     <p>Raising awareness about the planned facility at 800 W Mission Road</p>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#action">Take Action</a>
-    <a href="#updates">Updates</a>
-    <a href="#documents">Documents</a>
-  </nav>
+  <div class="nav-container">
+    <button class="menu-toggle" onclick="toggleMenu()">
+  	☰
+    </button>
+    <nav>
+  	<a href="#home">Home</a>
+  	<a href="#action">Take Action</a>
+  	<a href="#updates">Updates</a>
+  	<a href="#documents">Documents</a>
+    </nav>
+  </div>
 
   <main>
     <section id="petition">
       <p style="background-color: #f9f871; padding: 1em; text-align: center; font-size: 1.2em;">
-        🚨 <a href="https://www.change.org/p/stop-the-detox-facility-next-to-our-schools-in-san-marcos-ca-00a82719-6a0b-4996-9c9a-ad4442da357c?recruiter=578450354&recruited_by_id=36dbd2b0-52d0-11e6-bc72-b7c7a66a6c00&utm_source=share_petition&utm_campaign=psf_combo_share_initial&utm_term=starter_onboarding_share_personal&utm_medium=copylink&utm_content=cl_sharecopy_490534579_en-US%3A9" target="_blank" style="text-decoration: none; color: black; font-weight: bold;">Click here to sign the Petition: Stop the Detox Facility Next to Our Schools</a> 🚨
+        🚨 <a href="https://www.change.org/p/stop-the-detox-facility-next-to-our-schools-in-san-marcos-ca-00a82719-6a0b-4996-9c9a-ad4442da357c?recruiter=578450354&recruited_by_id=36db2b0-52d0-11e6-bc72-b7c7a66a6c00&utm_source=share_petition&utm_campaign=psf_combo_share_initial&utm_term=starter_onboarding_share_personal&utm_medium=copylink&utm_content=cl_sharecopy_490534579_en-US%3A9" target="_blank" style="text-decoration: none; color: black; font-weight: bold;">
+		Click Here To Sign The Petition Now – Protect Our Kids 🚨
+		</a>
       </p>
     </section>
 
@@ -111,5 +119,11 @@
   <footer>
     <p>&copy; 2025 San Marcos Community | All rights reserved</p>
   </footer>
+  <script>
+  function toggleMenu() {
+    const nav = document.querySelector("nav");
+    nav.classList.toggle("open");
+  }
+</script>
 </body>
 </html>
